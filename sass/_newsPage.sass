@@ -1,0 +1,93 @@
+.news_page
+	background-color: $main_color
+	&__header
+		@extend %header_style
+		padding-top: 30px
+		padding-bottom: 30px
+		@media screen and (max-width: 500px)
+			padding-bottom: 10px
+			img
+				display: none
+	&__descr
+		display: none
+		flex-wrap: wrap
+		max-width: 1200px
+		margin: 25px auto
+		padding: 20px
+		background-color: #fff
+		@media screen and (max-width: 350px)
+			padding-left: 10px
+			padding-right: 10px
+		.news_slider
+			width: 600px
+			@media screen and (max-width: 1190px)
+				margin: 0 auto
+			@media screen and (max-width: 650px)
+				width: 300px
+			@media screen and (max-width: 350px)
+				width: 250px
+			.first_news__sliderBig
+				padding-bottom: 10px
+				.news_slider__item
+					img
+						margin: 0 auto
+			.first_news__sliderSmall
+				div
+					padding-left: 5px
+					padding-right: 5px
+			&__item
+				text-align: center
+		.news_info__box
+			padding-left: 30px
+			width: 550px
+			@media screen and (max-width: 1190px)
+				width: 80%
+				margin: 20px auto
+				padding-left: 0
+			@media screen and (max-width: 650px)
+				width: 90%
+			@media screen and (max-width: 400px)
+				width: 100%
+			header
+				text-align: center
+				span
+					display: block
+			h3
+				padding-top: 20px
+				padding-bottom: 20px
+			ul
+				margin-left: 30px
+				@media screen and (max-width: 400px)
+					margin-left: 10px
+				li
+					@media screen and (max-width: 1190px)
+						text-align: justify
+			.news_page__btn
+				display: block
+				margin: 30px auto
+	.active_new
+			display: flex
+	.news_arrow
+		position: absolute
+		width: 35px
+		height: 100px
+		top: 0
+		border: 1px solid #fff
+		border-radius: 0
+		z-index: 99
+		cursor: pointer
+	.news_prev
+		left: 0
+		background: url('../img/newsPage/prev_arrow.svg') center no-repeat
+		background-size: cover
+	.news_next
+		right: 0
+		background: url('../img/newsPage/next_arrow.svg') center no-repeat
+		background-size: cover
+	.news_active
+		box-shadow: 0px 0px 8px -2px #000000
+		img
+			opacity: 1
+
+
+

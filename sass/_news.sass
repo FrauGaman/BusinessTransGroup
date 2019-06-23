@@ -1,0 +1,56 @@
+.news
+	background-color: $main_color
+	padding-bottom: 82px
+	header
+		@extend %header_style
+		padding-top: 77px
+		padding-bottom: 55px
+		@media screen and (max-width: 500px)
+			img
+				display: none
+	&_box
+		display: flex
+		margin: 0 auto
+		max-width: 1200px
+		justify-content: space-between
+		flex-wrap: wrap
+		figure
+			background-color: #fff
+			padding-bottom: 39px
+			cursor: pointer
+			&:hover
+				img
+					opacity: 1
+
+			@media screen and (max-width: 1200px)
+				padding-right: 5px
+				padding-left: 5px
+				flex-basis: 50%
+				text-align: center
+				justify-content: center
+				img
+					width: 100%
+					height: auto
+
+			@media screen and (max-width: 500px)
+				flex-basis: 100%
+			figcaption
+				display: flex
+				flex-direction: column
+				text-align: center
+				justify-content: space-between
+				padding-top: 30px
+				min-height: 100px
+				a
+					&:hover
+						text-decoration: underline
+				span
+					display: block
+				small
+					display: block
+					padding-left: 26px
+					text-align: left
+			img
+				opacity: 0.8
+
+

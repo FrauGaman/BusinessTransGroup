@@ -1,0 +1,35 @@
+nav
+	padding-top: 45px
+	width: 100%
+	max-width: 700px
+	margin: 0 auto
+	.main_nav__list
+		display: flex
+		justify-content: space-between
+	.main_nevigation
+		display: flex
+		list-style-type: none
+		justify-content: space-between
+		min-width: 500px
+		margin-left: 80px
+		font-size: 16px
+		font-weight: 700
+		line-height: 24px
+		cursor: pointer
+		@media screen and (max-width: 730px)
+			display: none
+		.nav_item
+			color: #fff
+			&:after
+				display: block
+				content: ""
+				height: 2px
+				width: 0%
+				background-color: #0b5e8f
+				transition: width .3s ease-in-out
+			&__active
+				&:after
+					width: 100%
+			&:hover:after
+				width: 100%
+

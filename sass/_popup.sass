@@ -1,0 +1,108 @@
+.index_popup
+	position: fixed
+	display: none
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0, 0, 0, 0.8)
+	z-index: 999
+	.popup_form
+		position: relative
+		display: flex
+		align-items: center
+		flex-direction: column
+		width: 864px
+		height: 312px
+		margin: auto
+		background-color: #fff
+		@media screen and (max-width: 900px)
+			width: 80%
+		&__header
+			padding-top: 44px
+			padding-bottom: 35px
+			font-size: 23px
+			font-weight: 700
+			line-height: 24px
+			text-transform: uppercase
+			@media screen and (max-width: 500px)
+				padding-top: 25px
+				padding-bottom: 5px
+				font-size: 20px
+		&__input
+			@media screen and (max-width: 900px)
+				width: 90%
+				text-align: center
+			input[type="text"]
+				width: 337px
+				height: 30px
+				border: transparent
+				border-bottom: 1px solid #000
+				margin-left: 20px
+				@media screen and (max-width: 900px)
+					width: 45%
+					@media screen and (max-width: 500px)
+						width: 90%
+						margin-left: 0
+						margin-top: 15px
+			input[placeholder="Как Вас зовут?"]
+				margin-left: 0
+	.request_btn__popup
+		margin-top: 31px
+		@media screen and (max-width: 900px)
+			margin-top: 10px
+	small
+		padding-top: 25px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 24px
+		@media screen and (max-width: 500px)
+			padding-top: 20px
+			font-size: 12px
+			line-height: 20px
+		span
+			display: block
+
+
+.popup
+	display: none
+	&_form__second
+		.popup_header
+			padding-top: 39px
+			padding-bottom: 15px
+			@media screen and (max-width: 900px)
+				padding-top: 15px
+				padding-bottom: 5px
+	input
+		width: 337px
+		height: 25px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid #000
+		@media screen and (max-width: 400px)
+			width: 260px
+	.part1, .part2
+		display: flex
+		flex-wrap: wrap
+		padding-top: 10px
+		margin: 0 auto
+		@media screen and (max-width: 900px)
+			width: 90%
+			text-align: center
+			justify-content: center
+		& :last-child
+			margin-left: 30px
+			@media screen and (max-width: 900px)
+				margin-left: 0
+				margin-top: 10px
+	.part1
+		& :first-child, & :last-child
+			padding-left: 28px
+			background: url('../img/request/form_icon.png') no-repeat 3px 1px
+			background-size: auto 80%
+	small
+		@media screen and (max-width: 900px)
+			padding-top: 10px
+			font-size: 10px
+			line-height: 15px

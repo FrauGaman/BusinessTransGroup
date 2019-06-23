@@ -1,0 +1,82 @@
+.type
+	background: #fff
+	background: linear-gradient(to bottom, #A9A9A9, #fff)
+	@media screen and (max-width: 1256px)
+		padding-left: 30px
+		padding-right: 30px
+	&_box
+		display: flex
+		max-width: 1200px
+		margin: 0 auto
+		min-height: 550px
+		@media screen and (max-width: 1000px)
+			flex-wrap: wrap
+		&__name
+			.tab-all
+				@media screen and (max-width: 1000px)
+					display: none
+			h2
+				padding-top: 67px
+				padding-bottom: 22px
+				font-size: 20px
+				font-weight: 700
+				line-height: 24px
+				text-transform: uppercase
+				@media screen and (max-width: 1000px)
+					text-align: center
+			li
+				display: flex
+				position: relative
+				align-items: center
+				width: 353px
+				height: 62px
+				padding-left: 17px
+				background-color: #fff
+				cursor: pointer
+				span
+					position: absolute
+					margin-left: 54px
+			.type_service
+				display: none
+				@media screen and (max-width: 1000px)
+					display: block
+			@media screen and (max-width: 1000px)
+				margin: 0 auto
+		&__descr
+			display: none
+			flex-direction: column
+			margin-left: 31px
+			@media screen and (max-width: 550px)
+				margin-left: 0
+			h2
+				padding-top: 67px
+				padding-bottom: 22px
+				font-size: 20px
+				font-weight: 700
+				line-height: 24px
+				text-transform: uppercase
+				@media screen and (max-width: 576px)
+					padding-top: 30px
+			.type_descr__text
+				font-size: 16px
+				font-weight: 400
+				line-height: 24px
+				text-align: justify
+			.type_descr__gallery
+				h2
+					padding-top: 20px
+				img
+					@media screen and (max-width: 550px)
+						width: 100%
+						height: auto
+				@media screen and (max-width: 550px)
+					display: flex
+					flex-direction: column
+					align-items: center
+					text-align: center
+		.active
+			display: flex
+	&_active
+		background-image: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%)
+		color: #fff
+

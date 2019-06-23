@@ -1,0 +1,30 @@
+.partner
+	position: relative
+	header
+		@extend %header_style
+		padding-top: 66px
+		padding-bottom: 54px
+		@media screen and (max-width: 500px)
+			img
+				display: none
+	&_icons
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		max-width: 1200px
+		margin: 0 auto
+		padding-bottom: 62px
+		@media screen and (max-width: 1154px) 
+			justify-content: center
+		&__item
+			display: flex
+			width: 231px
+			height: 158px
+			cursor: pointer
+			&:hover
+				box-shadow: 0px 0px 12px 0px #000000
+				background-color: #0b5e8f
+			img
+				margin: auto
+

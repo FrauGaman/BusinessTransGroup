@@ -1,0 +1,25 @@
+.footer
+	display: flex
+	padding-top: 35px
+	padding-bottom: 40px
+	justify-content: space-between
+	max-width: 1200px
+	align-items: center
+	margin: 0 auto
+	@media screen and (max-width: 1200px)
+		padding-left: 30px
+		padding-right: 30px
+	@media screen and (max-width: 960px)
+		flex-direction: column
+	&_nav
+		padding-top: 0
+		@media screen and (max-width: 960px)
+			padding-top: 20px
+			padding-bottom: 20px
+		.main_nevigation
+			.item
+				color: #000
+	.creater
+		a
+			font-style: italic
+			color: #000

@@ -1,0 +1,54 @@
+.service
+	position: relative
+	display: flex
+	justify-content: center
+	padding-bottom: 63px
+	background-color: $main_color
+	&_header
+		position: absolute
+		@extend %header_style
+		margin: -100px auto
+		padding-top: 60px
+		padding-bottom: 40px
+		background-color: $main_color
+		@media screen and (max-width: 1200px)
+			margin: 0 auto
+		@media screen and (max-width: 500px)
+			& :first-child, & :last-child
+				display: none
+	&_items
+		display: flex
+		flex-wrap: wrap
+		max-width: 1137px
+		margin-top: 30px
+		justify-content: space-between
+		@media screen and (max-width: 1200px)
+			margin-top: 130px
+		@media screen and (max-width: 1128px)
+			justify-content: space-around
+		.item
+			display: flex
+			flex-wrap: wrap
+			width: 376px
+			height: 178px
+			margin-bottom: 6px
+			justify-content: space-around
+			align-items: center
+			background-color: #fff
+			cursor: pointer
+			@media screen and (max-width: 500px)
+				width: 300px
+			&:hover
+				background-color: #8B0000
+				text-align: center
+
+				img
+					display: none
+				.info_box
+					color: #fff
+					.service_more
+						display: flex
+
+		.info_box
+			font-size: 16px
+			font-weight: 700

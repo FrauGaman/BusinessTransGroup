@@ -1,0 +1,58 @@
+.request
+	background: url('../img/request/request_bg.png') center no-repeat
+	background-size: cover
+	@media screen and (max-width: 800px)
+		padding-left: 30px
+		padding-right: 30px
+	h2
+		padding-top: 59px
+		padding-bottom: 50px
+		text-align: center
+		font-size: 23px
+		font-weight: 700
+		line-height: 24px
+		text-transform: uppercase
+	.form
+		display: flex
+		flex-direction: column
+	input
+		width: 337px
+		height: 25px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid #000
+		@media screen and (max-width: 400px)
+			width: 260px
+		&:focus
+			outline: none
+	.part1, .part2
+		display: flex
+		flex-wrap: wrap
+		padding-top: 30px
+		margin: 0 auto
+		@media screen and (max-width: 764px)
+			justify-content: center
+		& :last-child
+			margin-left: 30px
+			@media screen and (max-width: 764px)
+				margin-left: 10px
+			@media screen and (max-width: 744px)
+				margin-left: 0
+			@media screen and (max-width: 734px)
+				margin-top: 30px
+	.part1
+		& :first-child, & :last-child
+			padding-left: 28px
+			background: url('../img/request/form_icon.png') no-repeat 3px 1px
+			background-size: auto 80%
+	&_get
+		display: block
+		margin: 0 auto
+		margin-top: 42px
+	small
+		padding-top: 28px
+		padding-bottom: 53px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 24px
